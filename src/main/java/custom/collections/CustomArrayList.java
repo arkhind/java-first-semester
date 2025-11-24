@@ -35,7 +35,7 @@ public class CustomArrayList<T> implements CustomList<T> {
     @Override
     public T get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException("Index: " + index + ", validation.Size: " + size);
         }
         @SuppressWarnings("unchecked")
         T element = (T) elements[index];
@@ -45,7 +45,7 @@ public class CustomArrayList<T> implements CustomList<T> {
     @Override
     public T remove(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException("Index: " + index + ", validation.Size: " + size);
         }
 
         @SuppressWarnings("unchecked")
